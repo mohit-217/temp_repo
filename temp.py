@@ -24,7 +24,7 @@ def query_model(prompt, max_new_tokens, temperature):
             # Parse and return the generated text
             output = response.json()
             print(f"output is:{output}")
-            return output.get("generated_text", "No response text received.")
+            return output.get("text", "No response text received.")
         else:
             return f"Error: {response.status_code} - {response.text}"
     except Exception as e:
