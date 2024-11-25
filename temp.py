@@ -36,7 +36,7 @@ with gr.Blocks() as demo:
     with gr.Row():
         with gr.Column():
             user_input = gr.Textbox(label="Enter your prompt here", lines=5, placeholder="Type your question or input...")
-            max_new_tokens = gr.Slider(label="Max New Tokens", minimum=1, maximum=512, step=1, value=16)
+            max_new_tokens = gr.Slider(label="Max New Tokens", minimum=1, maximum=32000, step=1, value=200)
             temperature = gr.Slider(label="Temperature", minimum=0.0, maximum=1.0, step=0.1, value=0.7)
         with gr.Column():
             output_text = gr.Textbox(label="Generated Output", lines=10, interactive=False)
