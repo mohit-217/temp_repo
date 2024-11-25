@@ -32,7 +32,7 @@ def query_model(prompt, max_new_tokens, temperature):
 
 # Create Gradio interface
 with gr.Blocks() as demo:
-    gr.Markdown("# LLM Text Generation with SaulLM")
+    gr.Markdown("# LLM Text Generation")
     with gr.Row():
         with gr.Column():
             user_input = gr.Textbox(label="Enter your prompt here", lines=5, placeholder="Type your question or input...")
